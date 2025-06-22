@@ -1,0 +1,20 @@
+{
+  "name": "typium",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/NamSkibidi/Typium#readme",
+  "bugs": {
+    "url": "https://github.com/NamSkibidi/Typium/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NamSkibidi/Typium.git"
+  },
+  "license": "Apache-2.0",
+  "author": "NamSkibidi",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
