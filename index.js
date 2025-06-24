@@ -35,10 +35,18 @@ const Typium = new (class {
   }
 
   #wrapValue(value, type) {
-    if (type === String) return new String(value);
-    if (type === Number) return new Number(value);
-    if (type === Boolean) return new Boolean(value);
-    return value;
+    return type === String ? (new String(value))
+      : type === Number ? (new Number(value))
+        : type === Boolean ? (new Boolean(value))
+          : value;
+  }
+
+  delete(name) {
+    const entry = this.#data[name]
+    if (!entry) {
+      console.log("(Typium)" + name + "not found in delete()");
+    }
+    this.#data[name] = undefined;
   }
 
   get(name) {
